@@ -1,18 +1,23 @@
 #!/bin/bash
-###############################################################################
-#:File:install_asterisk_11_on_centos6_i386.sh
-#:Author:Cristian Segura Lepe <cristian.segura.lepe@gmail.com>
-#:Creation Date:
-###############################################################################
+#-------------------------------------------------------------------#
+# Author; Cristian Segura                                           #
+# Creation Date: 2017/05/20 07:38:56                                #
+#-------------------------------------------------------------------#
+#                                                                   #
+# Testing Platform                                                  #
+#                                                                   #
+#  VirtualBox VM Settings                                           #
+#    - OS:  CentOS Linux release 7.3.1611 (Core)                    #
+#    - Kenel: 3.10.0-514.10.2.el7.x86_64                            #
+#                                                                   #
+#-------------------------------------------------------------------#
 
+# Install Utilities (optional)
+yum -y install vim  # advanced text-editor
+yum -y sed          # stream editor 
+yum -y awk          # per-line editor
 
 # Install this script dependencies 
-yum -y install wget awk sed
-
-# Disable SELinux using sed
-
-#
-
-
+yum -y install wget  
 
 
