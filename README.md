@@ -2,7 +2,19 @@
 
 Asterisk IP PBX installation script
 
-## What is Asterisk?
 
-Asterisk is a software implementation of Private Branch Exchange (PBX) 
+
+
+## install-asterisk-13-CentOS7_64.sh
+
+Before script execution:
+
+* Update OS and reboot you system:
+
+```bash
+$ yum -y update && reboot
+```
+
+
+
 

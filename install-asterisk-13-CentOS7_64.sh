@@ -49,10 +49,16 @@ yum -y install wget
 yum install -y gcc
 yum install -y gcc-c++
 yum install -y ncurses-devel
+yum install -y newt-devel
+
 yum install -y libuuid-devel
 yum install -y jansson-devel
 yum install -y libxml2-devel
 yum install -y sqlite-devel
+
+yum install -y kernel-devel
+yum install -y automake
+
 
 # Create a new working directory
 mkdir $workdir 
@@ -84,11 +90,6 @@ rm -rf ${libpri_tarfile}
 ast_src_dir=$(ls | grep 'asterisk')
 dahdi_src_dir=$(ls | grep 'dahdi')
 libpri_src_dir=$(ls | grep 'libpri')
-
-#echo $ast_src_dir
-#echo $dahdi_src_dir
-#echo $libpri_src_dir
-
 
 #---------------------------------------------------------------------------------------#
 #  COMPILE PROCESS                                                                      #
