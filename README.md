@@ -1,11 +1,10 @@
-#asterisk-install-script
 
-Asterisk IP PBX installation script
-
+# Asterisk IP PBX Installation Script
 
 
 
-## install-asterisk-13-CentOS7_64.sh
+
+## `install-asterisk-13-CentOS7_64.sh`
 
 Before script execution:
 
