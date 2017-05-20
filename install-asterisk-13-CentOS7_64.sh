@@ -45,22 +45,17 @@ yum -y awk          # per-line editor
 # Install this script dependencies 
 yum -y install wget  
 
+# Install compilation dependencies
+yum install -y gcc
+yum install -y gcc-c++
+yum install -y ncurses-devel
+yum install -y libuuid-devel
+yum install -y jansson-devel
+yum install -y libxml2-devel
+yum install -y sqlite-devel
+
 # Create a new working directory
 mkdir $workdir 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #---------------------------------------------------------------------------------------#
@@ -94,6 +89,7 @@ libpri_src_dir=$(ls | grep 'libpri')
 #echo $dahdi_src_dir
 #echo $libpri_src_dir
 
+
 #---------------------------------------------------------------------------------------#
 #  COMPILE PROCESS                                                                      #
 #---------------------------------------------------------------------------------------#
@@ -113,5 +109,6 @@ cp -r $libpri_src_dir  /usr/src
 #cd $libpri_src_dir
 # - Compile asterisk
 #cd $ast_src_dir
+
 
 
