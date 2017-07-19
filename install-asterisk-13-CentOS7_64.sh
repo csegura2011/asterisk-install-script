@@ -59,6 +59,7 @@ yum install -y sqlite-devel
 yum install -y kernel-devel
 yum install -y automake
 
+yum install -y install libtool-ltdl libtool-ltdl-devel
 
 # Create a new working directory
 mkdir $workdir 
